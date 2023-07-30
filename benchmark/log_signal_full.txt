@@ -1,0 +1,2271 @@
+2021-12-20 12:24:59,682 - IoT Tester - INFO - <module> - [Tester] Main started.
+2021-12-20 12:24:59,682 - AutoTest - INFO - executeTests - Starting stresstest
+2021-12-20 12:24:59,894 - Test_setup1 - INFO - test_setup1 - 
+
+
+##############-----test_setup1 started-----###################
+
+2021-12-20 12:24:59,894 - Test_setup1 - INFO - test_setup1 - ####---- Node(Sender) <-> node(Receiver)
+
+
+
+2021-12-20 12:24:59,895 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:25:00,027 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:25:00,464 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:25:00,464 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:25:02,769 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 0 ###
+2021-12-20 12:25:22,780 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:64 bytes from fe80::f8c7:ff:fe00:1%lowpan0: icmp_seq=98 ttl=255 time=12.2 ms
+64 bytes from fe80::f8c7:ff:fe00:1%lowpan0: icmp_seq=99 ttl=255 time=12.8 ms
+64 bytes from fe80::f8c7:ff:fe00:1%lowpan0: icmp_seq=100 ttl=255 time=10.5 ms
+
+--- fe80::f8c7:ff:fe00:1%lowpan0 ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 894ms
+rtt min/avg/max/mdev = 10.002/12.380/15.502/1.137 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 12:25:22,781 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 256 ###
+2021-12-20 12:25:43,291 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:
+--- fe80::f8c7:ff:fe00:1%lowpan0 ping statistics ---
+100 packets transmitted, 96 received, 4% packet loss, time 919ms
+rtt min/avg/max/mdev = 32.416/37.375/44.604/2.039 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 12:25:43,291 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 512 ###
+2021-12-20 12:26:04,002 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:
+--- fe80::f8c7:ff:fe00:1%lowpan0 ping statistics ---
+100 packets transmitted, 82 received, 18% packet loss, time 995ms
+rtt min/avg/max/mdev = 62.935/70.118/78.701/3.299 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 12:26:04,002 - BandwidthTest - INFO - bandwidthTest - 
+###Calling BandwidthTest###
+
+2021-12-20 12:26:04,004 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 12:26:05,007 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:26:05,308 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:26:10,121 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.9KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 12:26:10,122 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 12:26:11,025 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:26:11,627 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:26:20,250 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.3KB/s   00:08    
+
+2021-12-20 12:26:20,251 - BandwidthTest - INFO - bandwidthTest - Upload:3.0/20.0
+2021-12-20 12:26:25,765 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:26:25,765 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:26:26,033 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:26:26,468 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:26:26,469 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:26:30,759 - BandwidthTest - INFO - bandwidthTest - Upload:3.0/20.0
+2021-12-20 12:26:31,662 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:26:32,163 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:27:32,329 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:27:32,329 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:27:32,331 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:27:32,579 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:27:33,241 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:27:33,241 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:27:37,760 - BandwidthTest - INFO - bandwidthTest - Upload:3.0/20.0
+2021-12-20 12:27:38,861 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:27:39,664 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:27:48,888 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.1KB/s   00:09    
+iot3@iotunit3:~$ 
+2021-12-20 12:27:48,889 - BandwidthTest - INFO - bandwidthTest - Upload:4.0/20.0
+2021-12-20 12:27:49,893 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:27:50,194 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:28:04,632 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.0KB/s   00:14    
+iot3@iotunit3:~$ 
+2021-12-20 12:28:04,633 - BandwidthTest - INFO - bandwidthTest - Upload:5.0/20.0
+2021-12-20 12:28:06,940 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:28:07,442 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:28:09,949 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB  11.4KB/s   00:02    
+iot3@iotunit3:~$ 
+2021-12-20 12:28:09,949 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 12:28:15,465 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:28:15,465 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:28:15,706 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:28:16,154 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:28:16,154 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:28:20,444 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 12:28:21,548 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:28:22,751 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:29:22,915 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:29:22,915 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:29:22,917 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:29:23,137 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:29:23,579 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:29:23,579 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:29:27,949 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 12:29:29,353 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:29:29,754 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:30:29,914 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:30:29,914 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:30:29,916 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:30:30,175 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:30:30,669 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:30:30,670 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:30:34,960 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 12:30:36,665 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:30:37,367 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:31:37,527 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:31:37,527 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:31:37,529 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:31:37,762 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:31:38,198 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:31:38,200 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:31:42,489 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 12:31:43,392 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:31:43,993 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:31:50,811 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.2KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 12:31:50,811 - BandwidthTest - INFO - bandwidthTest - Upload:7.0/20.0
+2021-12-20 12:31:56,328 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:31:56,329 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:31:56,549 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:31:56,985 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:31:56,985 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:32:01,332 - BandwidthTest - INFO - bandwidthTest - Upload:7.0/20.0
+2021-12-20 12:32:03,037 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:32:03,638 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:32:16,880 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.1KB/s   00:13    
+
+2021-12-20 12:32:16,881 - BandwidthTest - INFO - bandwidthTest - Upload:8.0/20.0
+2021-12-20 12:32:18,486 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:32:18,987 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:32:54,585 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.8KB/s   00:35    
+iot3@iotunit3:~$ 
+2021-12-20 12:32:54,585 - BandwidthTest - INFO - bandwidthTest - Upload:9.0/20.0
+2021-12-20 12:32:55,990 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:32:56,392 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:32:59,801 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   8.3KB/s   00:03    
+
+2021-12-20 12:32:59,801 - BandwidthTest - INFO - bandwidthTest - Upload:10.0/20.0
+2021-12-20 12:33:05,318 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:33:05,319 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:33:05,562 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:33:06,000 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:33:06,001 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:33:10,290 - BandwidthTest - INFO - bandwidthTest - Upload:10.0/20.0
+2021-12-20 12:33:11,795 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:33:12,196 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:33:17,811 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.1KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 12:33:17,812 - BandwidthTest - INFO - bandwidthTest - Upload:11.0/20.0
+2021-12-20 12:33:20,319 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:33:20,820 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:33:25,031 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.8KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 12:33:25,032 - BandwidthTest - INFO - bandwidthTest - Upload:12.0/20.0
+2021-12-20 12:33:25,935 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:33:26,437 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:34:26,600 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:34:26,600 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:34:26,602 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:34:26,852 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:34:27,348 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:34:27,349 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:34:31,639 - BandwidthTest - INFO - bandwidthTest - Upload:12.0/20.0
+2021-12-20 12:34:33,143 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:34:33,444 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:35:33,604 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:35:33,604 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:35:33,606 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:35:33,822 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:35:34,258 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:35:34,258 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:35:38,560 - BandwidthTest - INFO - bandwidthTest - Upload:12.0/20.0
+2021-12-20 12:35:39,663 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:35:40,165 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:35:46,985 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.2KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 12:35:46,985 - BandwidthTest - INFO - bandwidthTest - Upload:13.0/20.0
+2021-12-20 12:35:52,503 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:35:52,503 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:35:52,730 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:35:53,169 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:35:53,169 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:35:57,541 - BandwidthTest - INFO - bandwidthTest - Upload:13.0/20.0
+2021-12-20 12:36:03,053 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:36:03,054 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:36:03,363 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:36:03,821 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:36:03,821 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:36:08,110 - BandwidthTest - INFO - bandwidthTest - Upload:13.0/20.0
+2021-12-20 12:36:08,912 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:36:09,515 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:36:13,926 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.5KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 12:36:13,926 - BandwidthTest - INFO - bandwidthTest - Upload:14.0/20.0
+2021-12-20 12:36:16,133 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:36:16,534 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:37:16,717 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:37:16,718 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:37:16,719 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:37:16,941 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:37:17,380 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:37:17,380 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:37:21,700 - BandwidthTest - INFO - bandwidthTest - Upload:14.0/20.0
+2021-12-20 12:37:22,803 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:37:23,103 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:37:28,518 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.3KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 12:37:28,518 - BandwidthTest - INFO - bandwidthTest - Upload:15.0/20.0
+2021-12-20 12:37:29,922 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:37:30,524 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:37:37,743 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.9KB/s   00:07    
+
+2021-12-20 12:37:37,744 - BandwidthTest - INFO - bandwidthTest - Upload:16.0/20.0
+2021-12-20 12:37:41,955 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:37:42,556 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:37:48,270 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.0KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 12:37:48,271 - BandwidthTest - INFO - bandwidthTest - Upload:17.0/20.0
+2021-12-20 12:37:49,375 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:37:50,379 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:37:57,800 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.9KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 12:37:57,801 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 12:37:58,604 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:37:58,905 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:38:59,064 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:38:59,064 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:38:59,067 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:38:59,334 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:38:59,773 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:38:59,773 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:39:04,066 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 12:39:05,168 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:39:05,470 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:40:05,628 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:40:05,628 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:40:05,630 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:40:05,869 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:40:06,305 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:40:06,305 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:40:10,595 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 12:40:11,698 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:40:12,400 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:41:12,562 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:41:12,562 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:41:12,564 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:41:12,882 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:41:13,321 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:41:13,321 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:41:17,614 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 12:41:18,416 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:41:18,918 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:42:19,076 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:42:19,076 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:42:19,078 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:42:19,363 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:42:19,797 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:42:19,797 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:42:24,088 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 12:42:25,090 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:42:26,493 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:42:30,203 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   7.7KB/s   00:03    
+
+2021-12-20 12:42:30,203 - BandwidthTest - INFO - bandwidthTest - Upload:19.0/20.0
+2021-12-20 12:42:35,718 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:42:35,718 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:42:36,054 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:42:36,491 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:42:36,491 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:42:40,781 - BandwidthTest - INFO - bandwidthTest - Upload:19.0/20.0
+2021-12-20 12:42:41,685 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:42:44,091 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:42:50,108 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.8KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 12:42:50,109 - BandwidthTest - INFO - bandwidthTest - Upload:20.0/20.0
+2021-12-20 12:42:55,625 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:42:55,625 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:42:55,930 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:42:56,369 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:42:56,369 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:43:00,657 - BandwidthTest - INFO - bandwidthTest - Upload:20.0/20.0
+2021-12-20 12:43:01,859 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:43:02,361 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:43:05,670 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   8.7KB/s   00:03    
+
+2021-12-20 12:43:05,670 - BandwidthTest - INFO - bandwidthTest - Download:1.0/20.0
+2021-12-20 12:43:07,177 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:43:07,478 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:44:07,631 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:44:07,631 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:44:07,633 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:44:07,892 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:44:08,346 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:44:08,347 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:44:12,643 - BandwidthTest - INFO - bandwidthTest - Download:1.0/20.0
+2021-12-20 12:44:13,444 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:44:15,550 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:44:26,080 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.5KB/s   00:08 ETA
+2021-12-20 12:44:36,105 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:20    
+
+2021-12-20 12:44:36,106 - BandwidthTest - INFO - bandwidthTest - Download:2.0/20.0
+2021-12-20 12:44:37,209 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:44:37,510 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:44:57,566 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.8KB/s   00:15 ETA
+2021-12-20 12:45:12,206 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.8KB/s   00:34    
+
+2021-12-20 12:45:12,206 - BandwidthTest - INFO - bandwidthTest - Download:3.0/20.0
+2021-12-20 12:45:13,611 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:45:13,912 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:45:20,931 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.3KB/s   00:05 ETA
+2021-12-20 12:45:30,057 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.8KB/s   00:16    
+iot3@iotunit3:~$ 
+2021-12-20 12:45:30,057 - BandwidthTest - INFO - bandwidthTest - Download:4.0/20.0
+2021-12-20 12:45:32,865 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:45:34,269 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:45:55,323 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.8KB/s   00:16 ETA
+2021-12-20 12:46:10,164 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.8KB/s   00:35    
+iot3@iotunit3:~$ 
+2021-12-20 12:46:10,164 - BandwidthTest - INFO - bandwidthTest - Download:5.0/20.0
+2021-12-20 12:46:11,269 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:46:11,771 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:46:47,672 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.5KB/s   00:28 ETA
+2021-12-20 12:47:47,844 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:47:47,845 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:47:47,847 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:47:48,179 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:47:48,612 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:47:48,612 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:47:52,908 - BandwidthTest - INFO - bandwidthTest - Download:5.0/20.0
+2021-12-20 12:47:57,121 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:47:57,422 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:48:08,752 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.4KB/s   00:08 ETA
+2021-12-20 12:48:18,477 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:21    
+
+2021-12-20 12:48:18,477 - BandwidthTest - INFO - bandwidthTest - Download:6.0/20.0
+2021-12-20 12:48:19,681 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:48:19,982 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:48:36,826 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.0KB/s   00:12 ETA
+2021-12-20 12:48:54,576 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.8KB/s   00:34    
+
+2021-12-20 12:48:54,576 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 12:48:55,480 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:48:55,781 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:49:24,456 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.6KB/s   00:22 ETA
+2021-12-20 12:49:47,319 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:51    
+
+2021-12-20 12:49:47,320 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 12:49:52,838 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:49:52,839 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:49:53,121 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:49:53,560 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:49:53,560 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:49:57,850 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 12:50:00,356 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:50:00,657 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:50:22,008 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.8KB/s   00:16 ETA
+2021-12-20 12:50:40,056 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:39    
+iot3@iotunit3:~$ 
+2021-12-20 12:50:40,056 - BandwidthTest - INFO - bandwidthTest - Download:9.0/20.0
+2021-12-20 12:50:41,360 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:50:41,661 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:51:03,217 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.7KB/s   00:16 ETA
+2021-12-20 12:51:09,632 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.0KB/s   00:27    
+iot3@iotunit3:~$ 
+2021-12-20 12:51:09,632 - BandwidthTest - INFO - bandwidthTest - Download:10.0/20.0
+2021-12-20 12:51:10,635 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:51:10,936 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:52:11,099 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:52:11,099 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:52:11,102 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:52:11,448 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:52:11,887 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:52:11,888 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:52:16,180 - BandwidthTest - INFO - bandwidthTest - Download:10.0/20.0
+2021-12-20 12:52:21,693 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 12:52:21,694 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:52:21,999 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:52:22,669 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:52:22,670 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:52:26,719 - BandwidthTest - INFO - bandwidthTest - Download:10.0/20.0
+2021-12-20 12:52:28,925 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:52:29,226 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:53:04,224 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.5KB/s   00:27 ETA
+2021-12-20 12:53:23,883 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.5KB/s   00:54    
+iot3@iotunit3:~$ 
+2021-12-20 12:53:23,884 - BandwidthTest - INFO - bandwidthTest - Download:11.0/20.0
+2021-12-20 12:53:24,787 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:53:26,892 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:53:50,057 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.7KB/s   00:18 ETA
+2021-12-20 12:54:07,507 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:40    
+iot3@iotunit3:~$ 
+2021-12-20 12:54:07,508 - BandwidthTest - INFO - bandwidthTest - Download:12.0/20.0
+2021-12-20 12:54:08,511 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:54:09,713 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:54:22,549 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.3KB/s   00:10 ETA
+2021-12-20 12:54:38,192 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.0KB/s   00:28    
+
+2021-12-20 12:54:38,192 - BandwidthTest - INFO - bandwidthTest - Download:13.0/20.0
+2021-12-20 12:54:38,995 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:54:39,497 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:54:51,528 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.3KB/s   00:09 ETA
+2021-12-20 12:54:59,950 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:20    
+
+2021-12-20 12:54:59,950 - BandwidthTest - INFO - bandwidthTest - Download:14.0/20.0
+2021-12-20 12:55:01,054 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:55:01,354 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:55:22,012 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.8KB/s   00:16 ETA
+2021-12-20 12:56:22,184 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 12:56:22,185 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 12:56:22,187 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 12:56:22,529 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 12:56:22,968 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 12:56:22,969 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 12:56:27,264 - BandwidthTest - INFO - bandwidthTest - Download:14.0/20.0
+2021-12-20 12:56:28,166 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:56:28,667 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:56:44,010 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.0KB/s   00:12 ETA
+2021-12-20 12:56:52,836 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.2KB/s   00:24    
+
+2021-12-20 12:56:52,837 - BandwidthTest - INFO - bandwidthTest - Download:15.0/20.0
+2021-12-20 12:56:55,347 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:56:55,648 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:57:06,486 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.5KB/s   00:08 ETA
+2021-12-20 12:57:50,011 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.5KB/s   00:54    
+iot3@iotunit3:~$ 
+2021-12-20 12:57:50,012 - BandwidthTest - INFO - bandwidthTest - Download:16.0/20.0
+2021-12-20 12:57:51,015 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:57:51,517 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:58:15,878 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.7KB/s   00:19 ETA
+2021-12-20 12:58:40,973 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:49    
+
+2021-12-20 12:58:40,974 - BandwidthTest - INFO - bandwidthTest - Download:17.0/20.0
+2021-12-20 12:58:42,981 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:58:43,282 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:58:58,129 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.1KB/s   00:11 ETA
+2021-12-20 12:59:17,828 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.8KB/s   00:34    
+
+2021-12-20 12:59:17,828 - BandwidthTest - INFO - bandwidthTest - Download:18.0/20.0
+2021-12-20 12:59:19,934 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 12:59:20,335 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 12:59:46,240 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.6KB/s   00:20 ETA
+2021-12-20 13:00:07,304 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:46    
+
+2021-12-20 13:00:07,305 - BandwidthTest - INFO - bandwidthTest - Download:19.0/20.0
+2021-12-20 13:00:08,911 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:00:09,213 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:00:24,356 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.1KB/s   00:11 ETA
+2021-12-20 13:00:39,403 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.0KB/s   00:30    
+iot3@iotunit3:~$ 
+2021-12-20 13:00:39,404 - BandwidthTest - INFO - bandwidthTest - Download:20.0/20.0
+2021-12-20 13:00:41,811 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:00:42,112 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:01:07,194 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.6KB/s   00:19 ETA
+2021-12-20 13:02:07,412 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 13:02:07,413 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 13:02:07,425 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:02:07,723 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:02:08,177 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:02:08,178 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:02:12,471 - BandwidthTest - INFO - bandwidthTest - Download:20.0/20.0
+2021-12-20 13:02:13,874 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:02:14,175 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:03:14,345 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 13:03:14,345 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 13:03:14,347 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:03:14,683 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:03:15,134 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:03:15,135 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:03:19,430 - BandwidthTest - INFO - bandwidthTest - Download:20.0/20.0
+2021-12-20 13:03:20,935 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:03:21,236 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:03:53,417 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.5KB/s   00:25 ETA
+2021-12-20 13:04:48,670 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.3KB/s   01:27    
+
+2021-12-20 13:04:48,670 - BandwidthTest - INFO - bandwidthTest - 
+###BandwidthTest Result: 
+Download: 0.8949999999999999KB/s , Upload: 5.15KB/s ###
+
+
+2021-12-20 13:04:48,673 - Test_setup2 - INFO - test_setup2 - 
+
+
+##############-----test_setup2 started-----###################
+
+2021-12-20 13:04:48,674 - Test_setup2 - INFO - test_setup2 - ####---- Node(Sender) <-> Gateway(Receiver) 
+
+
+
+2021-12-20 13:04:48,674 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:04:48,920 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:04:49,363 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:04:49,363 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:04:51,660 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 0 ###
+2021-12-20 13:05:11,670 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:64 bytes from fd00:da:fa7:fac:a8f4:9da:fe3b:3298: icmp_seq=98 ttl=255 time=12.9 ms
+64 bytes from fd00:da:fa7:fac:a8f4:9da:fe3b:3298: icmp_seq=99 ttl=255 time=12.2 ms
+64 bytes from fd00:da:fa7:fac:a8f4:9da:fe3b:3298: icmp_seq=100 ttl=255 time=14.2 ms
+
+--- fd00:da:fa7:fac:a8f4:9da:fe3b:3298 ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 900ms
+rtt min/avg/max/mdev = 11.783/14.231/17.986/1.265 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:05:11,670 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 256 ###
+2021-12-20 13:05:32,183 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:
+--- fd00:da:fa7:fac:a8f4:9da:fe3b:3298 ping statistics ---
+100 packets transmitted, 94 received, 6% packet loss, time 913ms
+rtt min/avg/max/mdev = 36.067/39.566/43.389/1.666 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:05:32,185 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 512 ###
+2021-12-20 13:05:52,809 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:520 bytes from fd00:da:fa7:fac:a8f4:9da:fe3b:3298: icmp_seq=100 ttl=255 time=75.6 ms
+
+--- fd00:da:fa7:fac:a8f4:9da:fe3b:3298 ping statistics ---
+100 packets transmitted, 75 received, 25% packet loss, time 60ms
+rtt min/avg/max/mdev = 69.439/73.901/79.961/2.423 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:05:52,810 - BandwidthTest - INFO - bandwidthTest - 
+###Calling BandwidthTest###
+
+2021-12-20 13:05:52,814 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:05:57,124 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:05:57,727 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:06:04,244 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.4KB/s   00:06    
+
+2021-12-20 13:06:04,245 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 13:06:05,649 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:06:05,949 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:06:10,664 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.1KB/s   00:04    
+
+2021-12-20 13:06:10,665 - BandwidthTest - INFO - bandwidthTest - Upload:3.0/20.0
+2021-12-20 13:06:12,170 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:06:12,772 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:06:18,889 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.7KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 13:06:18,889 - BandwidthTest - INFO - bandwidthTest - Upload:4.0/20.0
+2021-12-20 13:06:24,408 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:06:24,409 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:06:24,750 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:06:25,187 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:06:25,187 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:06:29,472 - BandwidthTest - INFO - bandwidthTest - Upload:4.0/20.0
+2021-12-20 13:06:32,080 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:06:32,481 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:06:37,095 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.3KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 13:06:37,095 - BandwidthTest - INFO - bandwidthTest - Upload:5.0/20.0
+2021-12-20 13:06:38,098 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:06:38,500 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:06:42,209 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   7.6KB/s   00:03    
+iot3@iotunit3:~$ 
+2021-12-20 13:06:42,210 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 13:06:47,727 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:06:47,727 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:06:47,977 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:06:48,415 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:06:48,415 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:06:52,707 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 13:06:55,214 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:06:55,514 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:06:59,524 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   7.2KB/s   00:03    
+iot3@iotunit3:~$ 
+2021-12-20 13:06:59,524 - BandwidthTest - INFO - bandwidthTest - Upload:7.0/20.0
+2021-12-20 13:07:05,039 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:07:05,039 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:07:05,407 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:07:05,840 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:07:05,841 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:07:10,128 - BandwidthTest - INFO - bandwidthTest - Upload:7.0/20.0
+2021-12-20 13:07:11,531 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:07:11,933 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:07:16,247 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.6KB/s   00:04    
+
+2021-12-20 13:07:16,248 - BandwidthTest - INFO - bandwidthTest - Upload:8.0/20.0
+2021-12-20 13:07:17,855 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:07:18,261 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:07:23,175 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.9KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 13:07:23,177 - BandwidthTest - INFO - bandwidthTest - Upload:9.0/20.0
+2021-12-20 13:07:28,701 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:07:28,704 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:07:29,062 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:07:29,507 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:07:29,512 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:07:33,806 - BandwidthTest - INFO - bandwidthTest - Upload:9.0/20.0
+2021-12-20 13:07:36,223 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:07:36,825 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:07:41,636 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.9KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 13:07:41,637 - BandwidthTest - INFO - bandwidthTest - Upload:10.0/20.0
+2021-12-20 13:07:44,646 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:07:45,146 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:07:49,758 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.2KB/s   00:04    
+
+2021-12-20 13:07:49,759 - BandwidthTest - INFO - bandwidthTest - Upload:11.0/20.0
+2021-12-20 13:07:51,062 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:07:51,564 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:07:55,178 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   8.0KB/s   00:03    
+
+2021-12-20 13:07:55,179 - BandwidthTest - INFO - bandwidthTest - Upload:12.0/20.0
+2021-12-20 13:07:56,985 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:07:57,587 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:08:05,010 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.8KB/s   00:07    
+
+2021-12-20 13:08:05,011 - BandwidthTest - INFO - bandwidthTest - Upload:13.0/20.0
+2021-12-20 13:08:10,527 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:08:10,528 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:08:10,838 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:08:11,277 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:08:11,277 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:08:15,561 - BandwidthTest - INFO - bandwidthTest - Upload:13.0/20.0
+2021-12-20 13:08:17,267 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:08:17,970 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:08:22,182 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.7KB/s   00:04    
+
+2021-12-20 13:08:22,182 - BandwidthTest - INFO - bandwidthTest - Upload:14.0/20.0
+2021-12-20 13:08:23,688 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:08:24,290 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:08:28,101 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   7.5KB/s   00:03    
+iot3@iotunit3:~$ 
+2021-12-20 13:08:28,101 - BandwidthTest - INFO - bandwidthTest - Upload:15.0/20.0
+2021-12-20 13:08:30,610 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:08:31,212 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:08:35,424 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.8KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 13:08:35,424 - BandwidthTest - INFO - bandwidthTest - Upload:16.0/20.0
+2021-12-20 13:08:40,940 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:08:40,940 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:08:41,255 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:08:41,687 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:08:41,688 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:08:45,978 - BandwidthTest - INFO - bandwidthTest - Upload:16.0/20.0
+2021-12-20 13:08:47,281 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:08:47,683 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:08:51,495 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   7.4KB/s   00:03    
+iot3@iotunit3:~$ 
+2021-12-20 13:08:51,495 - BandwidthTest - INFO - bandwidthTest - Upload:17.0/20.0
+2021-12-20 13:08:55,009 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:08:55,710 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:08:59,119 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   8.3KB/s   00:03    
+iot3@iotunit3:~$ 
+2021-12-20 13:08:59,120 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 13:08:59,927 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:09:00,430 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:09:04,742 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.6KB/s   00:04    
+
+2021-12-20 13:09:04,742 - BandwidthTest - INFO - bandwidthTest - Upload:19.0/20.0
+2021-12-20 13:09:06,248 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:09:06,950 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:09:10,763 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   7.4KB/s   00:03    
+
+2021-12-20 13:09:10,763 - BandwidthTest - INFO - bandwidthTest - Upload:20.0/20.0
+2021-12-20 13:09:12,269 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:09:12,670 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:09:17,084 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.5KB/s   00:04    
+
+2021-12-20 13:09:17,084 - BandwidthTest - INFO - bandwidthTest - Download:1.0/20.0
+2021-12-20 13:09:22,601 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:09:22,601 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:09:22,930 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:09:23,367 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:09:23,368 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:09:27,658 - BandwidthTest - INFO - bandwidthTest - Download:1.0/20.0
+2021-12-20 13:09:28,460 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:09:28,961 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:09:55,733 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.6KB/s   00:20 ETA
+2021-12-20 13:10:17,896 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:48    
+
+2021-12-20 13:10:17,897 - BandwidthTest - INFO - bandwidthTest - Download:2.0/20.0
+2021-12-20 13:10:23,614 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:10:23,615 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:10:23,960 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:10:24,397 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:10:24,398 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:10:28,704 - BandwidthTest - INFO - bandwidthTest - Download:2.0/20.0
+2021-12-20 13:10:31,413 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:10:31,714 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:10:57,089 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.6KB/s   00:19 ETA
+2021-12-20 13:11:02,820 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.9KB/s   00:31    
+iot3@iotunit3:~$ 
+2021-12-20 13:11:02,820 - BandwidthTest - INFO - bandwidthTest - Download:3.0/20.0
+2021-12-20 13:11:08,337 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:11:08,338 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:11:08,709 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:11:09,142 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:11:09,142 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:11:13,432 - BandwidthTest - INFO - bandwidthTest - Download:3.0/20.0
+2021-12-20 13:11:14,434 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:11:15,036 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:11:33,687 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.9KB/s   00:14 ETA
+2021-12-20 13:11:58,652 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:43    
+
+2021-12-20 13:11:58,652 - BandwidthTest - INFO - bandwidthTest - Download:4.0/20.0
+2021-12-20 13:12:01,067 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:12:01,367 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:12:14,704 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.2KB/s   00:10 ETA
+2021-12-20 13:12:23,430 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.3KB/s   00:22    
+
+2021-12-20 13:12:23,430 - BandwidthTest - INFO - bandwidthTest - Download:5.0/20.0
+2021-12-20 13:12:24,433 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:12:25,035 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:12:56,721 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.5KB/s   00:24 ETA
+2021-12-20 13:13:24,494 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.5KB/s   00:59    
+
+2021-12-20 13:13:24,495 - BandwidthTest - INFO - bandwidthTest - Download:6.0/20.0
+2021-12-20 13:13:30,511 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:13:30,812 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:13:50,868 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.8KB/s   00:15 ETA
+2021-12-20 13:14:17,535 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:46    
+
+2021-12-20 13:14:17,536 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 13:14:23,655 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:14:23,656 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:14:23,994 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:14:24,472 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:14:24,472 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:14:28,770 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 13:14:33,281 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:14:33,582 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:14:58,150 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.7KB/s   00:19 ETA
+2021-12-20 13:15:14,704 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:41    
+
+2021-12-20 13:15:14,704 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 13:15:20,521 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:15:20,522 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:15:20,799 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:15:21,239 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:15:21,240 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:15:25,524 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 13:15:26,527 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:15:26,828 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:15:37,253 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.5KB/s   00:08 ETA
+2021-12-20 13:15:52,897 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.1KB/s   00:26    
+iot3@iotunit3:~$ 
+2021-12-20 13:15:52,897 - BandwidthTest - INFO - bandwidthTest - Download:9.0/20.0
+2021-12-20 13:15:58,412 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:15:58,413 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:15:58,705 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:15:59,146 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:15:59,147 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:16:03,433 - BandwidthTest - INFO - bandwidthTest - Download:9.0/20.0
+2021-12-20 13:16:08,948 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:16:08,948 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:16:09,250 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:16:09,686 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:16:09,686 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:16:13,973 - BandwidthTest - INFO - bandwidthTest - Download:9.0/20.0
+2021-12-20 13:16:14,775 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:16:15,076 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:16:29,914 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.1KB/s   00:11 ETA
+2021-12-20 13:16:45,065 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.0KB/s   00:30    
+
+2021-12-20 13:16:45,066 - BandwidthTest - INFO - bandwidthTest - Download:10.0/20.0
+2021-12-20 13:16:46,172 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:16:46,574 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:17:11,537 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.6KB/s   00:19 ETA
+2021-12-20 13:18:02,578 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.4KB/s   01:15    
+
+2021-12-20 13:18:02,578 - BandwidthTest - INFO - bandwidthTest - Download:11.0/20.0
+2021-12-20 13:18:07,192 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:18:07,794 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:18:23,958 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.0KB/s   00:12 ETA
+2021-12-20 13:19:12,504 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.4KB/s   01:04    
+
+2021-12-20 13:19:12,505 - BandwidthTest - INFO - bandwidthTest - Download:12.0/20.0
+2021-12-20 13:19:15,013 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:19:15,315 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:19:25,155 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.6KB/s   00:07 ETA
+2021-12-20 13:19:31,870 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.7KB/s   00:16    
+iot3@iotunit3:~$ 
+2021-12-20 13:19:31,870 - BandwidthTest - INFO - bandwidthTest - Download:13.0/20.0
+2021-12-20 13:19:36,185 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:19:36,486 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:20:36,644 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 13:20:36,644 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 13:20:36,646 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:20:36,906 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:20:37,345 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:20:37,346 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:20:41,635 - BandwidthTest - INFO - bandwidthTest - Download:13.0/20.0
+2021-12-20 13:20:46,045 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:20:46,646 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:20:59,382 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.3KB/s   00:10 ETA
+2021-12-20 13:21:04,108 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.6KB/s   00:17    
+
+2021-12-20 13:21:04,109 - BandwidthTest - INFO - bandwidthTest - Download:14.0/20.0
+2021-12-20 13:21:08,521 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:21:08,822 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:21:33,000 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.7KB/s   00:18 ETA
+2021-12-20 13:21:48,845 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:39    
+iot3@iotunit3:~$ 
+2021-12-20 13:21:48,846 - BandwidthTest - INFO - bandwidthTest - Download:15.0/20.0
+2021-12-20 13:21:49,850 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:21:50,151 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:22:00,681 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.5KB/s   00:08 ETA
+2021-12-20 13:22:11,812 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.3KB/s   00:21    
+iot3@iotunit3:~$ 
+2021-12-20 13:22:11,813 - BandwidthTest - INFO - bandwidthTest - Download:16.0/20.0
+2021-12-20 13:22:13,118 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:22:13,619 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:22:46,911 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.5KB/s   00:26 ETA
+2021-12-20 13:23:05,865 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:52    
+iot3@iotunit3:~$ 
+2021-12-20 13:23:05,865 - BandwidthTest - INFO - bandwidthTest - Download:17.0/20.0
+2021-12-20 13:23:06,868 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:23:07,169 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:23:18,303 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.4KB/s   00:08 ETA
+2021-12-20 13:23:40,666 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.9KB/s   00:33    
+
+2021-12-20 13:23:40,667 - BandwidthTest - INFO - bandwidthTest - Download:18.0/20.0
+2021-12-20 13:23:43,075 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:23:43,376 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:23:55,915 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.3KB/s   00:09 ETA
+2021-12-20 13:24:06,646 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.2KB/s   00:23    
+
+2021-12-20 13:24:06,646 - BandwidthTest - INFO - bandwidthTest - Download:19.0/20.0
+2021-12-20 13:24:10,956 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:24:11,256 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:24:27,499 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.0KB/s   00:12 ETA
+2021-12-20 13:24:44,551 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.9KB/s   00:33    
+
+2021-12-20 13:24:44,551 - BandwidthTest - INFO - bandwidthTest - Download:20.0/20.0
+2021-12-20 13:24:45,655 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:24:45,956 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:25:32,694 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.3KB/s   00:36 ETA
+2021-12-20 13:25:55,455 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.4KB/s   01:09    
+iot3@iotunit3:~$ 
+2021-12-20 13:25:55,455 - BandwidthTest - INFO - bandwidthTest - 
+###BandwidthTest Result: 
+Download: 0.8749999999999998KB/s , Upload: 6.495KB/s ###
+
+
+2021-12-20 13:25:55,458 - Test_setup3 - INFO - test_setup3 - 
+
+
+##############-----test_setup3 started-----###################
+
+2021-12-20 13:25:55,458 - Test_setup3 - INFO - test_setup3 - ####---- Node(Sender) <-> Gateway <-> Node(Receiver) 
+
+
+
+2021-12-20 13:25:55,458 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:25:55,673 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:25:56,112 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:25:56,113 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:25:58,402 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 0 ###
+2021-12-20 13:26:18,412 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:64 bytes from fd00:da:fa7:fac:8c0:6e31:9daf:1c53: icmp_seq=98 ttl=255 time=13.7 ms
+64 bytes from fd00:da:fa7:fac:8c0:6e31:9daf:1c53: icmp_seq=99 ttl=255 time=15.5 ms
+64 bytes from fd00:da:fa7:fac:8c0:6e31:9daf:1c53: icmp_seq=100 ttl=255 time=14.4 ms
+
+--- fd00:da:fa7:fac:8c0:6e31:9daf:1c53 ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 894ms
+rtt min/avg/max/mdev = 12.116/14.474/16.479/1.085 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:26:18,412 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 256 ###
+2021-12-20 13:26:38,925 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:
+--- fd00:da:fa7:fac:8c0:6e31:9daf:1c53 ping statistics ---
+100 packets transmitted, 98 received, 2% packet loss, time 913ms
+rtt min/avg/max/mdev = 36.405/40.443/47.002/1.919 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:26:38,925 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 512 ###
+2021-12-20 13:26:59,438 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:520 bytes from fd00:da:fa7:fac:8c0:6e31:9daf:1c53: icmp_seq=100 ttl=255 time=77.4 ms
+
+--- fd00:da:fa7:fac:8c0:6e31:9daf:1c53 ping statistics ---
+100 packets transmitted, 94 received, 6% packet loss, time 918ms
+rtt min/avg/max/mdev = 69.916/75.948/84.939/2.741 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:26:59,438 - BandwidthTest - INFO - bandwidthTest - 
+###Calling BandwidthTest###
+
+2021-12-20 13:26:59,441 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:27:01,047 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:27:01,949 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:27:14,284 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.3KB/s   00:12    
+
+2021-12-20 13:27:14,284 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 13:27:15,804 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:27:16,707 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:28:16,877 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 13:28:16,877 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 13:28:16,879 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:28:17,192 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:28:17,628 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:28:17,629 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:28:21,921 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 13:28:23,436 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:28:24,338 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:29:24,519 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 13:29:24,520 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 13:29:24,522 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:29:24,886 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:29:25,325 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:29:25,325 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:29:29,615 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 13:29:35,131 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:29:35,131 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:29:35,439 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:29:35,878 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:29:35,879 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:29:40,175 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 13:29:41,377 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:29:42,280 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:30:25,931 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:43    
+
+2021-12-20 13:30:25,931 - BandwidthTest - INFO - bandwidthTest - Upload:3.0/20.0
+2021-12-20 13:30:27,536 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:30:28,438 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:30:34,454 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.8KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 13:30:34,455 - BandwidthTest - INFO - bandwidthTest - Upload:4.0/20.0
+2021-12-20 13:30:35,659 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:30:36,661 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:30:44,581 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.6KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 13:30:44,582 - BandwidthTest - INFO - bandwidthTest - Upload:5.0/20.0
+2021-12-20 13:30:46,087 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:30:47,191 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:30:56,015 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.2KB/s   00:08    
+iot3@iotunit3:~$ 
+2021-12-20 13:30:56,015 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 13:30:57,619 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:30:58,522 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:31:32,417 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.8KB/s   00:33    
+
+2021-12-20 13:31:32,417 - BandwidthTest - INFO - bandwidthTest - Upload:7.0/20.0
+2021-12-20 13:31:34,128 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:31:35,031 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:31:39,846 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.0KB/s   00:04    
+iot3@iotunit3:~$ 
+2021-12-20 13:31:39,847 - BandwidthTest - INFO - bandwidthTest - Upload:8.0/20.0
+2021-12-20 13:31:42,556 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:31:43,458 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:31:47,973 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   6.3KB/s   00:04    
+
+2021-12-20 13:31:47,976 - BandwidthTest - INFO - bandwidthTest - Upload:9.0/20.0
+2021-12-20 13:31:49,787 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:31:50,690 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:32:07,236 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.7KB/s   00:16    
+
+2021-12-20 13:32:07,236 - BandwidthTest - INFO - bandwidthTest - Upload:10.0/20.0
+2021-12-20 13:32:09,043 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:32:10,046 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:32:15,763 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.0KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 13:32:15,763 - BandwidthTest - INFO - bandwidthTest - Upload:11.0/20.0
+2021-12-20 13:32:16,967 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:32:17,970 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:32:34,821 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.7KB/s   00:16    
+iot3@iotunit3:~$ 
+2021-12-20 13:32:34,821 - BandwidthTest - INFO - bandwidthTest - Upload:12.0/20.0
+2021-12-20 13:32:36,428 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:32:37,330 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:32:51,393 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.0KB/s   00:14    
+
+2021-12-20 13:32:51,394 - BandwidthTest - INFO - bandwidthTest - Upload:13.0/20.0
+2021-12-20 13:32:52,698 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:32:53,601 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:32:59,933 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.5KB/s   00:06    
+
+2021-12-20 13:32:59,933 - BandwidthTest - INFO - bandwidthTest - Upload:14.0/20.0
+2021-12-20 13:33:01,940 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:33:02,943 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:33:09,660 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.3KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 13:33:09,660 - BandwidthTest - INFO - bandwidthTest - Upload:15.0/20.0
+2021-12-20 13:33:11,266 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:33:12,169 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:33:18,486 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.5KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 13:33:18,486 - BandwidthTest - INFO - bandwidthTest - Upload:16.0/20.0
+2021-12-20 13:33:24,002 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:33:24,002 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:33:24,298 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:33:24,734 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:33:24,734 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:33:29,030 - BandwidthTest - INFO - bandwidthTest - Upload:16.0/20.0
+2021-12-20 13:33:30,434 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:33:31,336 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:33:41,364 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.8KB/s   00:10    
+
+2021-12-20 13:33:41,364 - BandwidthTest - INFO - bandwidthTest - Upload:17.0/20.0
+2021-12-20 13:33:42,768 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:33:43,671 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:34:10,743 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.1KB/s   00:27    
+iot3@iotunit3:~$ 
+2021-12-20 13:34:10,744 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 13:34:16,261 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:34:16,261 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:34:16,630 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:34:17,067 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:34:17,067 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:34:21,371 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 13:34:22,675 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:34:23,678 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:34:27,388 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   7.7KB/s   00:03    
+iot3@iotunit3:~$ 
+2021-12-20 13:34:27,388 - BandwidthTest - INFO - bandwidthTest - Upload:19.0/20.0
+2021-12-20 13:34:28,693 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:34:29,597 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:34:35,312 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.0KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 13:34:35,312 - BandwidthTest - INFO - bandwidthTest - Upload:20.0/20.0
+2021-12-20 13:34:37,824 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:34:38,726 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:34:53,167 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.0KB/s   00:14    
+
+2021-12-20 13:34:53,167 - BandwidthTest - INFO - bandwidthTest - Download:1.0/20.0
+2021-12-20 13:34:54,371 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:34:55,375 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:35:55,548 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 13:35:55,549 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 13:35:55,552 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:35:55,852 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:35:56,288 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:35:56,289 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:36:00,584 - BandwidthTest - INFO - bandwidthTest - Download:1.0/20.0
+2021-12-20 13:36:02,190 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:36:03,192 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:36:07,808 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   3.5KB/s   00:03 ETA
+2021-12-20 13:36:14,729 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.5KB/s   00:11    
+
+2021-12-20 13:36:14,729 - BandwidthTest - INFO - bandwidthTest - Download:2.0/20.0
+2021-12-20 13:36:15,934 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:36:16,836 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:36:22,853 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.7KB/s   00:04 ETA
+2021-12-20 13:36:31,977 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.9KB/s   00:15    
+
+2021-12-20 13:36:31,977 - BandwidthTest - INFO - bandwidthTest - Download:3.0/20.0
+2021-12-20 13:36:35,789 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:36:36,692 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:36:48,221 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.4KB/s   00:09 ETA
+2021-12-20 13:36:56,842 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:20    
+iot3@iotunit3:~$ 
+2021-12-20 13:36:56,843 - BandwidthTest - INFO - bandwidthTest - Download:4.0/20.0
+2021-12-20 13:36:58,347 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:36:59,350 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:37:03,359 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   4.0KB/s   00:03 ETA
+2021-12-20 13:37:09,073 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.9KB/s   00:09    
+
+2021-12-20 13:37:09,074 - BandwidthTest - INFO - bandwidthTest - Download:5.0/20.0
+2021-12-20 13:37:10,478 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:37:11,379 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:37:15,091 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   4.3KB/s   00:02 ETA
+2021-12-20 13:37:17,899 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.4KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 13:37:17,900 - BandwidthTest - INFO - bandwidthTest - Download:6.0/20.0
+2021-12-20 13:37:23,441 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:37:23,442 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:37:23,712 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:37:24,154 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:37:24,155 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:37:28,447 - BandwidthTest - INFO - bandwidthTest - Download:6.0/20.0
+2021-12-20 13:37:33,963 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:37:33,964 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:37:34,267 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:37:34,704 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:37:34,705 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:37:39,004 - BandwidthTest - INFO - bandwidthTest - Download:6.0/20.0
+2021-12-20 13:37:40,908 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:37:41,509 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:37:44,420 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   5.4KB/s   00:02 ETA
+2021-12-20 13:37:48,529 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.1KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 13:37:48,529 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 13:37:50,235 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:37:51,239 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:38:51,404 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 13:38:51,405 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 13:38:51,405 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:38:51,758 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:38:52,200 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:38:52,200 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:38:56,496 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 13:38:57,899 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:38:58,801 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:39:06,226 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.2KB/s   00:05 ETA
+2021-12-20 13:39:16,456 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.6KB/s   00:17    
+
+2021-12-20 13:39:16,456 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 13:39:17,861 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:39:18,764 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:39:22,374 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   4.4KB/s   00:02 ETA
+2021-12-20 13:39:28,793 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.8KB/s   00:10    
+iot3@iotunit3:~$ 
+2021-12-20 13:39:28,793 - BandwidthTest - INFO - bandwidthTest - Download:9.0/20.0
+2021-12-20 13:39:31,301 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:39:32,104 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:39:36,116 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   4.1KB/s   00:03 ETA
+2021-12-20 13:39:38,223 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.7KB/s   00:06    
+
+2021-12-20 13:39:38,223 - BandwidthTest - INFO - bandwidthTest - Download:10.0/20.0
+2021-12-20 13:39:40,232 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:39:41,235 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:39:44,145 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   5.4KB/s   00:02 ETA
+2021-12-20 13:39:47,955 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.2KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 13:39:47,955 - BandwidthTest - INFO - bandwidthTest - Download:11.0/20.0
+2021-12-20 13:39:49,461 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:39:50,364 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:39:54,777 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   3.7KB/s   00:03 ETA
+2021-12-20 13:39:57,986 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.8KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 13:39:57,986 - BandwidthTest - INFO - bandwidthTest - Download:12.0/20.0
+2021-12-20 13:39:59,603 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:40:00,505 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:40:06,623 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.7KB/s   00:04 ETA
+2021-12-20 13:40:20,362 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:19    
+iot3@iotunit3:~$ 
+2021-12-20 13:40:20,362 - BandwidthTest - INFO - bandwidthTest - Download:13.0/20.0
+2021-12-20 13:40:21,867 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:40:22,869 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:40:32,399 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.7KB/s   00:07 ETA
+2021-12-20 13:40:38,714 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.8KB/s   00:15    
+iot3@iotunit3:~$ 
+2021-12-20 13:40:38,715 - BandwidthTest - INFO - bandwidthTest - Download:14.0/20.0
+2021-12-20 13:40:40,220 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:40:41,125 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:40:49,650 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.9KB/s   00:06 ETA
+2021-12-20 13:40:59,280 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.6KB/s   00:18    
+iot3@iotunit3:~$ 
+2021-12-20 13:40:59,284 - BandwidthTest - INFO - bandwidthTest - Download:15.0/20.0
+2021-12-20 13:41:01,996 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:41:03,099 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:41:05,706 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   6.3KB/s   00:01 ETA
+2021-12-20 13:41:08,614 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.2KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 13:41:08,614 - BandwidthTest - INFO - bandwidthTest - Download:16.0/20.0
+2021-12-20 13:41:10,220 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:41:11,223 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:41:14,642 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   4.7KB/s   00:02 ETA
+2021-12-20 13:41:16,546 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.3KB/s   00:05    
+
+2021-12-20 13:41:16,547 - BandwidthTest - INFO - bandwidthTest - Download:17.0/20.0
+2021-12-20 13:41:18,253 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:41:19,256 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:41:22,865 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   4.4KB/s   00:02 ETA
+2021-12-20 13:41:27,879 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.3KB/s   00:08    
+
+2021-12-20 13:41:27,879 - BandwidthTest - INFO - bandwidthTest - Download:18.0/20.0
+2021-12-20 13:41:29,986 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:41:30,888 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:41:42,118 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.4KB/s   00:08 ETA
+2021-12-20 13:41:50,944 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:20    
+iot3@iotunit3:~$ 
+2021-12-20 13:41:50,945 - BandwidthTest - INFO - bandwidthTest - Download:19.0/20.0
+2021-12-20 13:41:52,550 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:41:53,353 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:41:55,965 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   6.1KB/s   00:02 ETA
+2021-12-20 13:41:59,675 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.6KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 13:41:59,675 - BandwidthTest - INFO - bandwidthTest - Download:20.0/20.0
+2021-12-20 13:42:00,989 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 13:42:01,992 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 13:42:03,596 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   9.8KB/s   00:01 ETA
+2021-12-20 13:42:08,008 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.7KB/s   00:06    
+
+2021-12-20 13:42:08,009 - BandwidthTest - INFO - bandwidthTest - 
+###BandwidthTest Result: 
+Download: 3.18KB/s , Upload: 3.5KB/s ###
+
+
+2021-12-20 13:42:08,011 - Test_setup4 - INFO - test_setup4 - 
+
+
+##############-----test_setup4 started-----###################
+
+2021-12-20 13:42:08,011 - Test_setup4 - INFO - test_setup4 - ####---- Node(Sender)(IPv6) <-> Host(IPv6->IPv4) <-> Internet <-> Server(Receiver)  
+
+
+
+2021-12-20 13:42:08,011 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:42:08,242 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:42:08,678 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:42:08,678 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:42:10,999 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 0 ###
+2021-12-20 13:42:31,111 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:64 bytes from fd00:da:fa7:fac:a7:64:54ee:4eca: icmp_seq=98 ttl=45 time=21.3 ms
+64 bytes from fd00:da:fa7:fac:a7:64:54ee:4eca: icmp_seq=99 ttl=45 time=30.3 ms
+64 bytes from fd00:da:fa7:fac:a7:64:54ee:4eca: icmp_seq=100 ttl=45 time=22.8 ms
+
+--- fd00:da:fa7:fac:a7:64:84.238.78.202 ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 898ms
+rtt min/avg/max/mdev = 19.185/23.244/31.402/1.998 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:42:31,112 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 256 ###
+2021-12-20 13:42:51,629 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:264 bytes from fd00:da:fa7:fac:a7:64:54ee:4eca: icmp_seq=99 ttl=45 time=50.4 ms
+264 bytes from fd00:da:fa7:fac:a7:64:54ee:4eca: icmp_seq=100 ttl=45 time=48.5 ms
+
+--- fd00:da:fa7:fac:a7:64:84.238.78.202 ping statistics ---
+100 packets transmitted, 88 received, 12% packet loss, time 970ms
+rtt min/avg/max/mdev = 44.128/48.743/58.133/2.179 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:42:51,630 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 512 ###
+2021-12-20 13:43:12,446 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:
+--- fd00:da:fa7:fac:a7:64:84.238.78.202 ping statistics ---
+100 packets transmitted, 73 received, 27% packet loss, time 75ms
+rtt min/avg/max/mdev = 77.587/84.241/103.116/4.026 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 13:43:12,447 - BandwidthTest - INFO - bandwidthTest - 
+###Calling BandwidthTest###
+
+2021-12-20 13:43:12,449 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:43:22,375 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:43:22,375 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:43:22,716 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:43:23,154 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:43:23,154 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:43:27,437 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:43:37,364 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:43:37,365 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:43:37,662 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:43:38,113 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:43:38,114 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:43:42,416 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:43:51,947 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:43:51,947 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:43:52,309 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:43:52,757 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:43:52,758 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:43:57,051 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:44:06,578 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:44:06,578 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:44:06,858 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:44:07,303 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:44:07,304 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:44:11,594 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:44:17,713 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:44:17,714 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:44:18,003 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:44:18,441 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:44:18,441 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:44:22,758 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:44:28,888 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:44:28,889 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:44:29,164 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:44:29,604 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:44:29,604 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:44:33,891 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:44:39,405 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:44:39,406 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:44:39,720 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:44:40,156 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:44:40,156 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:44:44,450 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:44:49,976 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:44:49,977 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:44:50,266 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:44:50,705 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:44:50,706 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:44:54,998 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:45:01,135 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:45:01,136 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:45:01,426 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:45:01,865 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:45:01,866 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:45:06,157 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:45:12,277 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:45:12,278 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:45:12,583 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:45:13,024 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:45:13,025 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:45:17,311 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:45:23,426 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:45:23,426 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:45:23,744 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:45:24,180 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:45:24,180 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:45:28,477 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:45:34,593 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:45:34,594 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:45:34,918 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:45:35,357 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:45:35,357 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:45:39,651 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:45:45,866 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:45:45,866 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:45:46,174 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:45:46,612 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:45:46,612 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:45:50,900 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:46:00,427 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:46:00,427 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:46:00,718 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:46:01,160 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:46:01,161 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:46:05,454 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:46:12,071 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:46:12,072 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:46:12,385 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:46:12,821 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:46:12,821 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:46:17,112 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:46:26,735 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:46:26,736 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:46:27,031 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:46:27,470 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:46:27,470 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:46:31,766 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:46:41,293 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:46:41,294 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:46:41,568 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:46:42,004 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:46:42,005 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:46:46,298 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:46:56,129 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:46:56,130 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:46:56,423 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:46:56,856 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:46:56,856 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:47:01,152 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:47:07,272 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:47:07,273 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:47:07,573 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:47:08,009 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:47:08,009 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:47:12,299 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:47:19,418 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:47:19,418 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:47:19,756 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:47:20,192 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:47:20,192 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:47:24,485 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:47:30,600 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:47:30,601 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:47:30,928 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:47:31,364 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:47:31,364 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:47:35,660 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:47:41,778 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:47:41,778 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:47:42,094 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:47:42,530 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:47:42,531 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:47:46,823 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:47:52,940 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:47:52,940 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:47:53,258 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:47:53,703 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:47:53,703 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:47:57,996 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:48:04,416 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:48:04,416 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:48:04,710 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:48:05,149 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:48:05,150 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:48:09,446 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:48:15,562 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:48:15,562 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:48:15,884 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:48:16,326 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:48:16,327 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:48:20,622 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:48:26,636 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:48:26,637 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:48:26,941 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:48:27,380 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:48:27,380 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:48:31,695 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:48:37,814 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:48:37,814 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:48:38,090 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:48:38,529 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:48:38,530 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:48:42,825 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:48:49,542 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:48:49,544 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:48:49,885 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:48:50,324 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:48:50,325 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:48:54,624 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:49:01,241 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:49:01,241 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:49:01,556 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:49:01,997 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:49:01,998 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:49:06,295 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:49:12,411 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:49:12,412 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:49:12,716 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:49:13,149 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:49:13,150 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:49:17,442 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:49:23,659 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:49:23,659 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:49:23,978 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:49:24,417 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:49:24,417 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:49:28,720 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:49:34,739 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:49:34,740 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:49:35,043 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:49:35,478 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:49:35,479 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:49:39,770 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:49:45,886 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:49:45,886 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:49:46,186 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:49:46,619 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:49:46,620 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:49:50,916 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:49:57,043 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:49:57,043 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:49:57,366 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:49:57,797 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:49:57,798 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:50:02,086 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:50:08,304 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:50:08,305 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:50:08,612 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:50:09,046 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:50:09,046 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:50:13,339 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:50:22,772 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:50:22,772 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:50:23,073 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:50:23,521 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:50:23,521 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:50:27,808 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:50:33,925 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:50:33,926 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:50:34,215 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:50:34,648 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:50:34,649 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:50:38,944 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:50:44,460 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:50:44,460 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:50:44,778 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:50:45,214 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:50:45,215 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:50:49,511 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:50:55,627 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:50:55,627 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:50:55,935 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:50:56,374 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:50:56,375 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:51:00,670 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:51:06,584 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:51:06,585 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:51:06,898 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:51:07,334 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:51:07,334 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:51:11,624 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:51:21,449 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:51:21,449 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:51:21,738 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:51:22,171 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:51:22,172 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:51:26,457 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:51:32,573 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:51:32,574 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:51:32,795 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:51:33,228 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:51:33,228 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:51:37,604 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:51:43,819 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:51:43,820 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:51:44,040 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:51:44,477 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:51:44,477 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:51:48,799 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:51:54,814 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:51:54,815 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:51:55,039 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:51:55,480 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:51:55,480 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:52:00,111 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:52:06,140 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:52:06,141 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:52:06,358 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:52:06,796 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:52:06,796 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:52:11,095 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:52:17,011 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:52:17,012 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:52:17,232 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:52:17,668 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:52:17,668 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:52:22,013 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:52:28,030 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:52:28,031 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:52:28,253 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:52:28,692 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:52:28,693 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:52:32,997 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:52:39,214 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:52:39,214 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:52:39,435 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:52:39,868 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:52:39,869 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:52:44,246 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:52:53,669 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:52:53,670 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:52:53,890 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:52:54,324 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:52:54,325 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:52:58,697 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:53:04,714 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:53:04,714 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:53:04,937 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:53:05,370 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:53:05,371 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:53:09,670 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:53:15,785 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:53:15,786 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:53:16,003 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:53:16,438 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:53:16,439 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:53:20,793 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:53:26,708 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:53:26,709 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:53:26,932 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:53:27,377 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:53:27,378 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:53:31,679 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:53:39,201 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:53:39,201 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:53:39,422 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:53:39,870 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:53:39,870 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:53:44,242 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:53:50,257 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:53:50,258 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:53:50,476 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:53:50,914 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:53:50,914 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:53:55,332 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:54:01,550 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:54:01,550 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:54:01,769 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:54:02,209 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:54:02,210 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:54:06,578 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:54:12,596 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:54:12,596 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:54:12,819 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:54:13,271 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:54:13,272 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:54:17,644 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:54:23,759 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:54:23,759 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:54:23,979 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:54:24,415 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:54:24,416 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:54:28,861 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:54:34,877 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:54:34,878 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:54:35,096 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:54:35,532 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:54:35,532 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:54:39,902 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:54:46,017 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:54:46,018 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:54:46,267 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:54:46,706 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:54:46,707 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:54:50,996 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:54:57,213 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:54:57,213 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:54:57,494 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:54:57,927 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:54:57,928 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:55:02,215 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:55:08,232 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:55:08,233 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:55:08,562 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:55:08,995 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:55:08,995 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:55:13,285 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:55:22,807 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:55:22,808 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:55:23,099 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:55:23,536 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:55:23,536 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:55:27,823 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:55:34,943 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:55:34,943 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:55:35,280 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:55:35,725 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:55:35,725 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:55:40,030 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:55:49,352 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:55:49,352 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:55:49,614 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:55:50,058 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:55:50,058 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:55:54,349 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:56:00,566 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:56:00,567 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:56:00,878 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:56:01,317 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:56:01,317 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:56:05,610 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:56:11,729 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:56:11,730 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:56:12,040 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:56:12,474 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:56:12,474 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:56:16,772 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:56:22,895 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:56:22,897 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:56:23,201 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:56:23,634 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:56:23,634 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:56:27,921 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:56:34,040 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:56:34,041 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:56:34,358 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:56:34,809 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:56:34,810 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:56:39,100 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:56:45,321 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:56:45,321 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:56:45,632 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:56:46,068 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:56:46,068 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:56:50,358 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:56:56,574 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:56:56,575 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:56:56,890 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:56:57,329 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:56:57,330 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:57:01,619 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:57:07,838 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:57:07,838 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:57:08,156 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:57:08,591 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:57:08,591 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:57:12,886 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:57:19,002 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:57:19,002 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:57:19,311 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:57:19,748 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:57:19,749 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:57:24,041 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:57:33,567 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:57:33,569 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:57:33,846 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:57:34,283 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:57:34,284 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:57:38,576 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:57:44,693 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:57:44,694 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:57:45,016 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:57:45,457 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:57:45,458 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:57:49,750 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:57:55,974 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:57:55,975 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:57:56,272 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:57:56,705 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:57:56,705 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:58:01,000 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:58:07,122 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:58:07,123 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:58:07,447 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:58:07,884 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:58:07,885 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:58:12,175 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:58:18,291 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:58:18,291 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:58:18,609 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:58:19,043 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:58:19,043 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:58:23,326 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:58:29,444 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:58:29,444 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:58:29,768 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:58:30,205 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:58:30,206 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:58:34,500 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:58:41,417 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:58:41,417 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:58:41,748 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:58:42,182 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:58:42,182 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:58:46,470 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:58:52,687 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:58:52,687 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:58:53,018 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:58:53,455 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:58:53,455 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:58:57,739 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:59:03,855 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:59:03,855 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:59:04,167 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:59:04,603 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:59:04,604 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:59:08,896 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:59:18,430 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:59:18,430 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:59:18,717 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:59:19,148 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:59:19,149 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:59:23,439 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:59:33,265 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:59:33,266 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:59:33,564 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:59:34,001 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:59:34,002 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:59:38,294 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:59:44,315 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:59:44,315 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:59:44,623 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:59:45,056 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:59:45,057 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 13:59:49,352 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 13:59:55,468 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 13:59:55,469 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 13:59:55,788 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 13:59:56,224 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 13:59:56,225 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:00:00,518 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 14:00:06,633 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 14:00:06,633 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:00:06,952 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:00:07,389 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:00:07,390 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:00:11,675 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 14:00:17,794 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 14:00:17,795 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:00:18,106 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:00:18,543 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:00:18,543 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:00:22,836 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 14:00:28,951 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 14:00:28,951 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:00:29,261 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:00:29,722 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:00:29,722 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:00:34,008 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 14:00:40,326 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 14:00:40,326 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:00:40,570 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:00:41,009 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:00:41,010 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:00:45,296 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 14:00:50,814 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 14:00:50,814 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:00:51,053 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:00:51,498 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:00:51,499 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:00:55,898 - BandwidthTest - INFO - bandwidthTest - Upload:1.0/20.0
+2021-12-20 14:00:56,800 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:00:57,603 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:01:08,634 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.6KB/s   00:10    
+iot3@iotunit3:~$ 
+2021-12-20 14:01:08,634 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 14:01:14,150 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 14:01:14,151 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:01:14,371 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:01:14,810 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:01:14,811 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:01:19,183 - BandwidthTest - INFO - bandwidthTest - Upload:2.0/20.0
+2021-12-20 14:01:20,086 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:01:20,588 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:01:28,117 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.8KB/s   00:07    
+
+2021-12-20 14:01:28,118 - BandwidthTest - INFO - bandwidthTest - Upload:3.0/20.0
+2021-12-20 14:01:29,478 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:01:30,182 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:01:40,935 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.7KB/s   00:10    
+
+2021-12-20 14:01:40,936 - BandwidthTest - INFO - bandwidthTest - Upload:4.0/20.0
+2021-12-20 14:01:43,646 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:01:44,448 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:01:51,182 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.3KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 14:01:51,182 - BandwidthTest - INFO - bandwidthTest - Upload:5.0/20.0
+2021-12-20 14:01:56,698 - BandwidthTest - INFO - bandwidthTest - No Response at password Restart SSH
+2021-12-20 14:01:56,699 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:01:56,965 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:01:57,399 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:01:57,400 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:02:01,689 - BandwidthTest - INFO - bandwidthTest - Upload:5.0/20.0
+2021-12-20 14:02:02,592 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:02:03,394 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:02:09,514 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.7KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 14:02:09,514 - BandwidthTest - INFO - bandwidthTest - Upload:6.0/20.0
+2021-12-20 14:02:12,023 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:02:12,826 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:02:21,758 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.2KB/s   00:08    
+iot3@iotunit3:~$ 
+2021-12-20 14:02:21,758 - BandwidthTest - INFO - bandwidthTest - Upload:7.0/20.0
+2021-12-20 14:02:22,861 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:02:23,564 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:02:30,683 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.0KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 14:02:30,683 - BandwidthTest - INFO - bandwidthTest - Upload:8.0/20.0
+2021-12-20 14:02:31,692 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:02:32,194 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:02:57,140 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.1KB/s   00:24    
+
+2021-12-20 14:02:57,140 - BandwidthTest - INFO - bandwidthTest - Upload:9.0/20.0
+2021-12-20 14:02:58,065 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:02:58,767 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:03:06,790 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.6KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 14:03:06,791 - BandwidthTest - INFO - bandwidthTest - Upload:10.0/20.0
+2021-12-20 14:03:08,197 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:03:09,200 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:03:18,727 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.0KB/s   00:09    
+iot3@iotunit3:~$ 
+2021-12-20 14:03:18,728 - BandwidthTest - INFO - bandwidthTest - Upload:11.0/20.0
+2021-12-20 14:03:19,833 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:03:20,634 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:03:26,252 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.1KB/s   00:05    
+iot3@iotunit3:~$ 
+2021-12-20 14:03:26,252 - BandwidthTest - INFO - bandwidthTest - Upload:12.0/20.0
+2021-12-20 14:03:27,282 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:03:27,784 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:03:35,503 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.7KB/s   00:07    
+
+2021-12-20 14:03:35,504 - BandwidthTest - INFO - bandwidthTest - Upload:13.0/20.0
+2021-12-20 14:03:36,909 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:03:37,812 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:03:43,039 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   5.5KB/s   00:05    
+
+2021-12-20 14:03:43,040 - BandwidthTest - INFO - bandwidthTest - Upload:14.0/20.0
+2021-12-20 14:03:44,552 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:03:45,354 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:03:51,770 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.4KB/s   00:06    
+
+2021-12-20 14:03:51,771 - BandwidthTest - INFO - bandwidthTest - Upload:15.0/20.0
+2021-12-20 14:03:52,874 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:03:53,876 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:04:00,797 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.2KB/s   00:06    
+iot3@iotunit3:~$ 
+2021-12-20 14:04:00,797 - BandwidthTest - INFO - bandwidthTest - Upload:16.0/20.0
+2021-12-20 14:04:01,806 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:04:02,508 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:04:10,129 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.8KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 14:04:10,129 - BandwidthTest - INFO - bandwidthTest - Upload:17.0/20.0
+2021-12-20 14:04:11,534 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:04:12,036 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:04:25,371 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.1KB/s   00:13    
+iot3@iotunit3:~$ 
+2021-12-20 14:04:25,371 - BandwidthTest - INFO - bandwidthTest - Upload:18.0/20.0
+2021-12-20 14:04:26,275 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:04:27,278 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:04:34,298 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   4.0KB/s   00:07    
+
+2021-12-20 14:04:34,298 - BandwidthTest - INFO - bandwidthTest - Upload:19.0/20.0
+2021-12-20 14:04:35,603 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:04:36,104 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:04:50,347 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.0KB/s   00:14    
+
+2021-12-20 14:04:50,347 - BandwidthTest - INFO - bandwidthTest - Upload:20.0/20.0
+2021-12-20 14:04:51,553 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:04:52,054 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:04:59,574 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.8KB/s   00:07    
+iot3@iotunit3:~$ 
+2021-12-20 14:04:59,575 - BandwidthTest - INFO - bandwidthTest - Download:1.0/20.0
+2021-12-20 14:05:00,478 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:05:00,979 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:05:37,275 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.4KB/s   00:28 ETA
+2021-12-20 14:05:50,115 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:49    
+iot3@iotunit3:~$ 
+2021-12-20 14:05:50,115 - BandwidthTest - INFO - bandwidthTest - Download:2.0/20.0
+2021-12-20 14:05:50,919 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:05:51,421 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:06:14,081 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.7KB/s   00:17 ETA
+2021-12-20 14:06:29,027 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.8KB/s   00:37    
+iot3@iotunit3:~$ 
+2021-12-20 14:06:29,030 - BandwidthTest - INFO - bandwidthTest - Download:3.0/20.0
+2021-12-20 14:06:30,137 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:06:30,639 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:06:37,359 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.4KB/s   00:05 ETA
+2021-12-20 14:06:39,466 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   3.3KB/s   00:08    
+iot3@iotunit3:~$ 
+2021-12-20 14:06:39,467 - BandwidthTest - INFO - bandwidthTest - Download:4.0/20.0
+2021-12-20 14:06:40,774 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:06:41,176 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:06:58,326 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.0KB/s   00:13 ETA
+2021-12-20 14:07:39,458 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.5KB/s   00:58    
+
+2021-12-20 14:07:39,458 - BandwidthTest - INFO - bandwidthTest - Download:5.0/20.0
+2021-12-20 14:07:44,774 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:07:45,476 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:07:59,814 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.1KB/s   00:11 ETA
+2021-12-20 14:08:23,985 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:38    
+
+2021-12-20 14:08:23,986 - BandwidthTest - INFO - bandwidthTest - Download:6.0/20.0
+2021-12-20 14:08:24,890 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:08:25,392 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:08:40,234 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.1KB/s   00:11 ETA
+2021-12-20 14:08:43,041 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.6KB/s   00:17    
+iot3@iotunit3:~$ 
+2021-12-20 14:08:43,041 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 14:08:43,946 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:08:44,447 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:09:42,453 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.3KB/s   00:45 ETA
+2021-12-20 14:10:42,628 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 14:10:42,629 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 14:10:42,631 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:10:42,861 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:10:43,300 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:10:43,301 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:10:47,678 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 14:10:48,580 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:10:49,282 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:11:49,447 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 14:11:49,447 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 14:11:49,449 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:11:49,690 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:11:50,123 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:11:50,123 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:11:54,417 - BandwidthTest - INFO - bandwidthTest - Download:7.0/20.0
+2021-12-20 14:11:55,219 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:11:56,022 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:12:05,146 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.8KB/s   00:07 ETA
+2021-12-20 14:12:47,565 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.6KB/s   00:51    
+
+2021-12-20 14:12:47,565 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 14:12:48,569 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:12:49,288 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:13:06,337 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.9KB/s   00:13 ETA
+2021-12-20 14:14:06,501 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 14:14:06,501 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 14:14:06,504 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:14:06,729 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:14:07,165 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:14:07,166 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:14:11,456 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 14:14:13,962 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:14:14,464 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:14:18,275 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   4.2KB/s   00:02 ETA
+2021-12-20 14:15:18,440 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 14:15:18,440 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 14:15:18,442 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:15:18,684 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:15:19,120 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:15:19,121 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:15:23,417 - BandwidthTest - INFO - bandwidthTest - Download:8.0/20.0
+2021-12-20 14:15:25,021 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:15:25,523 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:15:28,130 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   6.2KB/s   00:02 ETA
+2021-12-20 14:15:39,161 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.1KB/s   00:13    
+
+2021-12-20 14:15:39,161 - BandwidthTest - INFO - bandwidthTest - Download:9.0/20.0
+2021-12-20 14:15:40,567 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:15:41,068 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:15:46,784 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.8KB/s   00:04 ETA
+2021-12-20 14:16:03,229 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.3KB/s   00:22    
+
+2021-12-20 14:16:03,230 - BandwidthTest - INFO - bandwidthTest - Download:10.0/20.0
+2021-12-20 14:16:04,837 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:16:05,539 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:16:13,673 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.0KB/s   00:06 ETA
+2021-12-20 14:16:30,940 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.1KB/s   00:25    
+iot3@iotunit3:~$ 
+2021-12-20 14:16:30,940 - BandwidthTest - INFO - bandwidthTest - Download:11.0/20.0
+2021-12-20 14:16:31,845 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:16:32,346 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:16:50,196 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.9KB/s   00:13 ETA
+2021-12-20 14:17:13,462 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   0.7KB/s   00:41    
+
+2021-12-20 14:17:13,462 - BandwidthTest - INFO - bandwidthTest - Download:12.0/20.0
+2021-12-20 14:17:14,868 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:17:15,369 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:17:33,117 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   0.9KB/s   00:13 ETA
+2021-12-20 14:18:33,286 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 14:18:33,287 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 14:18:33,288 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:18:33,624 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:18:34,064 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:18:34,065 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:18:38,353 - BandwidthTest - INFO - bandwidthTest - Download:12.0/20.0
+2021-12-20 14:18:39,455 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:18:39,957 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:18:44,671 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   3.4KB/s   00:03 ETA
+2021-12-20 14:18:54,300 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.0KB/s   00:14    
+
+2021-12-20 14:18:54,300 - BandwidthTest - INFO - bandwidthTest - Download:13.0/20.0
+2021-12-20 14:18:55,906 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:18:56,408 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:19:01,822 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   3.0KB/s   00:04 ETA
+2021-12-20 14:19:08,742 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.3KB/s   00:12    
+iot3@iotunit3:~$ 
+2021-12-20 14:19:08,743 - BandwidthTest - INFO - bandwidthTest - Download:14.0/20.0
+2021-12-20 14:19:09,647 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:19:10,349 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:19:26,306 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.0KB/s   00:12 ETA
+2021-12-20 14:19:32,722 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.3KB/s   00:22    
+
+2021-12-20 14:19:32,722 - BandwidthTest - INFO - bandwidthTest - Download:15.0/20.0
+2021-12-20 14:19:33,727 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:19:34,229 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:19:45,364 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.4KB/s   00:08 ETA
+2021-12-20 14:19:56,394 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.3KB/s   00:22    
+iot3@iotunit3:~$ 
+2021-12-20 14:19:56,394 - BandwidthTest - INFO - bandwidthTest - Download:16.0/20.0
+2021-12-20 14:19:57,298 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:19:57,800 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:20:11,835 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.1KB/s   00:11 ETA
+2021-12-20 14:21:12,001 - BandwidthTest - INFO - bandwidthTest - No Response
+2021-12-20 14:21:12,001 - BandwidthTest - INFO - bandwidthTest - No Response at scp Restart SSH
+2021-12-20 14:21:12,003 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 14:21:12,342 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 14:21:12,776 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 14:21:12,776 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 14:21:17,065 - BandwidthTest - INFO - bandwidthTest - Download:16.0/20.0
+2021-12-20 14:21:18,268 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:21:19,371 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:21:26,194 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.3KB/s   00:05 ETA
+2021-12-20 14:21:35,018 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.8KB/s   00:15    
+iot3@iotunit3:~$ 
+2021-12-20 14:21:35,018 - BandwidthTest - INFO - bandwidthTest - Download:17.0/20.0
+2021-12-20 14:21:36,122 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:21:36,624 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:21:41,641 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   3.2KB/s   00:03 ETA
+2021-12-20 14:21:56,985 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:20    
+
+2021-12-20 14:21:56,986 - BandwidthTest - INFO - bandwidthTest - Download:18.0/20.0
+2021-12-20 14:21:58,292 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:21:59,294 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:22:10,126 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.5KB/s   00:08 ETA
+2021-12-20 14:22:13,736 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   2.0KB/s   00:14    
+iot3@iotunit3:~$ 
+2021-12-20 14:22:13,737 - BandwidthTest - INFO - bandwidthTest - Download:19.0/20.0
+2021-12-20 14:22:14,443 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:22:14,945 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:22:25,076 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   1.6KB/s   00:07 ETA
+2021-12-20 14:22:37,011 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.3KB/s   00:22    
+
+2021-12-20 14:22:37,012 - BandwidthTest - INFO - bandwidthTest - Download:20.0/20.0
+2021-12-20 14:22:38,123 - BandwidthTest - INFO - bandwidthTest - 
+
+2021-12-20 14:22:38,825 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                               0%    0     0.0KB/s   --:-- ETA
+2021-12-20 14:22:44,940 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                              56%   16KB   2.6KB/s   00:04 ETA
+2021-12-20 14:22:58,678 - BandwidthTest - INFO - bandwidthTest - TestFileMicro.jpg                             100%   29KB   1.4KB/s   00:19    
+
+2021-12-20 14:22:58,678 - BandwidthTest - INFO - bandwidthTest - 
+###BandwidthTest Result: 
+Download: 1.4049999999999998KB/s , Upload: 3.5800000000000005KB/s ###
+
+
+2021-12-20 14:22:58,683 - IoT Tester - INFO - <module> - [TestEngine] Main finished, total time: 1h:57m:59s. Return value (how many tests failed): '0'.

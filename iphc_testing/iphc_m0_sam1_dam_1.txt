@@ -1,0 +1,166 @@
+No.     Time           Source                Destination           Protocol Length Info
+      4 3.075207       fe80::f859:329d:d10b:88a8 fe80::98f5:3ffb:7983:a1ee ICMPv6   52     Neighbor Advertisement fe80::f859:329d:d10b:88a8 (rtr, sol)
+
+Frame 4: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0002, Src: 0x0001
+6LoWPAN, Src: fe80::f859:329d:d10b:88a8, Dest: fe80::98f5:3ffb:7983:a1ee
+Internet Protocol Version 6, Src: fe80::f859:329d:d10b:88a8, Dst: fe80::98f5:3ffb:7983:a1ee
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xbe6f [correct]
+    [Checksum Status: Good]
+    Flags: 0xc0000000, Router, Solicited
+    Target Address: fe80::f859:329d:d10b:88a8
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 4.111255       fe80::f8c7:ff:fe00:1  fe80::98f5:3ffb:7983:a1ee ICMPv6   52     Neighbor Advertisement fe80::f8c7:ff:fe00:1 (rtr, sol)
+
+Frame 7: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0002, Src: 0x0001
+6LoWPAN, Src: fe80::f8c7:ff:fe00:1, Dest: fe80::98f5:3ffb:7983:a1ee
+Internet Protocol Version 6, Src: fe80::f8c7:ff:fe00:1, Dst: fe80::98f5:3ffb:7983:a1ee
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xd834 [correct]
+    [Checksum Status: Good]
+    Flags: 0xc0000000, Router, Solicited
+    Target Address: fe80::f8c7:ff:fe00:1
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 8.106092       fe80::98f5:3ffb:7983:a1ee fe80::f859:329d:d10b:88a8 ICMPv6   52     Neighbor Advertisement fe80::98f5:3ffb:7983:a1ee (sol)
+
+Frame 9: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0001, Src: 0x0002
+6LoWPAN, Src: fe80::98f5:3ffb:7983:a1ee, Dest: fe80::f859:329d:d10b:88a8
+Internet Protocol Version 6, Src: fe80::98f5:3ffb:7983:a1ee, Dst: fe80::f859:329d:d10b:88a8
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xceb8 [correct]
+    [Checksum Status: Good]
+    Flags: 0x40000000, Solicited
+    Target Address: fe80::98f5:3ffb:7983:a1ee
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 54.834054      fe80::f8c7:ff:fe00:1  fe80::98f5:3ffb:7983:a1ee ICMPv6   52     Neighbor Advertisement fe80::f8c7:ff:fe00:1 (rtr, sol)
+
+Frame 28: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0002, Src: 0x0001
+6LoWPAN, Src: fe80::f8c7:ff:fe00:1, Dest: fe80::98f5:3ffb:7983:a1ee
+Internet Protocol Version 6, Src: fe80::f8c7:ff:fe00:1, Dst: fe80::98f5:3ffb:7983:a1ee
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xd834 [correct]
+    [Checksum Status: Good]
+    Flags: 0xc0000000, Router, Solicited
+    Target Address: fe80::f8c7:ff:fe00:1
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 59.869470      fe80::98f5:3ffb:7983:a1ee fe80::f859:329d:d10b:88a8 ICMPv6   52     Neighbor Advertisement fe80::98f5:3ffb:7983:a1ee (sol)
+
+Frame 31: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0001, Src: 0x0002
+6LoWPAN, Src: fe80::98f5:3ffb:7983:a1ee, Dest: fe80::f859:329d:d10b:88a8
+Internet Protocol Version 6, Src: fe80::98f5:3ffb:7983:a1ee, Dst: fe80::f859:329d:d10b:88a8
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xceb8 [correct]
+    [Checksum Status: Good]
+    Flags: 0x40000000, Solicited
+    Target Address: fe80::98f5:3ffb:7983:a1ee
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 64.914074      fe80::f859:329d:d10b:88a8 fe80::98f5:3ffb:7983:a1ee ICMPv6   52     Neighbor Advertisement fe80::f859:329d:d10b:88a8 (rtr, sol)
+
+Frame 36: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0002, Src: 0x0001
+6LoWPAN, Src: fe80::f859:329d:d10b:88a8, Dest: fe80::98f5:3ffb:7983:a1ee
+Internet Protocol Version 6, Src: fe80::f859:329d:d10b:88a8, Dst: fe80::98f5:3ffb:7983:a1ee
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xbe6f [correct]
+    [Checksum Status: Good]
+    Flags: 0xc0000000, Router, Solicited
+    Target Address: fe80::f859:329d:d10b:88a8
+
+No.     Time           Source                Destination           Protocol Length Info
+     96 272.275851     fe80::f8c7:ff:fe00:2  fe80::f8c7:ff:fe00:1  ICMPv6   76     Neighbor Advertisement fe80::f8c7:ff:fe00:2 (sol, ovr) from 9a:f5:3f:fb:79:83:a1:ee is at 00:02:00:00:00:00
+
+Frame 96: 76 bytes on wire (608 bits), 76 bytes captured (608 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0001, Src: 0x0002
+6LoWPAN, Src: fe80::f8c7:ff:fe00:2, Dest: fe80::f8c7:ff:fe00:1
+Internet Protocol Version 6, Src: fe80::f8c7:ff:fe00:2, Dst: fe80::f8c7:ff:fe00:1
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0x3a4d [correct]
+    [Checksum Status: Good]
+    Flags: 0x60000000, Solicited, Override
+    Target Address: fe80::f8c7:ff:fe00:2
+    ICMPv6 Option (Target link-layer address : 9a:f5:3f:fb:79:83:a1:ee)
+    ICMPv6 Option (Target link-layer address : 00:02:00:00:00:00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     99 276.281268     fe80::f8c7:ff:fe00:1  fe80::98f5:3ffb:7983:a1ee ICMPv6   52     Neighbor Advertisement fe80::f8c7:ff:fe00:1 (rtr, sol)
+
+Frame 99: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0002, Src: 0x0001
+6LoWPAN, Src: fe80::f8c7:ff:fe00:1, Dest: fe80::98f5:3ffb:7983:a1ee
+Internet Protocol Version 6, Src: fe80::f8c7:ff:fe00:1, Dst: fe80::98f5:3ffb:7983:a1ee
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xd834 [correct]
+    [Checksum Status: Good]
+    Flags: 0xc0000000, Router, Solicited
+    Target Address: fe80::f8c7:ff:fe00:1
+
+No.     Time           Source                Destination           Protocol Length Info
+    102 281.316306     fe80::98f5:3ffb:7983:a1ee fe80::f859:329d:d10b:88a8 ICMPv6   52     Neighbor Advertisement fe80::98f5:3ffb:7983:a1ee (sol)
+
+Frame 102: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0001, Src: 0x0002
+6LoWPAN, Src: fe80::98f5:3ffb:7983:a1ee, Dest: fe80::f859:329d:d10b:88a8
+Internet Protocol Version 6, Src: fe80::98f5:3ffb:7983:a1ee, Dst: fe80::f859:329d:d10b:88a8
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xceb8 [correct]
+    [Checksum Status: Good]
+    Flags: 0x40000000, Solicited
+    Target Address: fe80::98f5:3ffb:7983:a1ee
+
+No.     Time           Source                Destination           Protocol Length Info
+    104 286.362034     fe80::f859:329d:d10b:88a8 fe80::98f5:3ffb:7983:a1ee ICMPv6   52     Neighbor Advertisement fe80::f859:329d:d10b:88a8 (rtr, sol)
+
+Frame 104: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0002, Src: 0x0001
+6LoWPAN, Src: fe80::f859:329d:d10b:88a8, Dest: fe80::98f5:3ffb:7983:a1ee
+Internet Protocol Version 6, Src: fe80::f859:329d:d10b:88a8, Dst: fe80::98f5:3ffb:7983:a1ee
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xbe6f [correct]
+    [Checksum Status: Good]
+    Flags: 0xc0000000, Router, Solicited
+    Target Address: fe80::f859:329d:d10b:88a8
+
+No.     Time           Source                Destination           Protocol Length Info
+    248 304.121972     fe80::f8c7:ff:fe00:1  fe80::98f5:3ffb:7983:a1ee ICMPv6   52     Neighbor Advertisement fe80::f8c7:ff:fe00:1 (rtr, sol)
+
+Frame 248: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+IEEE 802.15.4 Data, Dst: 0x0002, Src: 0x0001
+6LoWPAN, Src: fe80::f8c7:ff:fe00:1, Dest: fe80::98f5:3ffb:7983:a1ee
+Internet Protocol Version 6, Src: fe80::f8c7:ff:fe00:1, Dst: fe80::98f5:3ffb:7983:a1ee
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xd834 [correct]
+    [Checksum Status: Good]
+    Flags: 0xc0000000, Router, Solicited
+    Target Address: fe80::f8c7:ff:fe00:1

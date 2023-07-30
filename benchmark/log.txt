@@ -1,0 +1,39 @@
+2021-12-20 23:16:08,830 - IoT Tester - INFO - <module> - [Tester] Main started.
+2021-12-20 23:16:08,831 - AutoTest - INFO - executeTests - Starting stresstest
+2021-12-20 23:16:09,235 - Test_setup1 - INFO - test_setup1 - 
+
+
+##############-----test_setup1 started-----###################
+
+2021-12-20 23:16:09,235 - Test_setup1 - INFO - test_setup1 - ####---- Node(Sender) <-> node(Receiver)
+
+
+
+2021-12-20 23:16:09,236 - SSH - INFO - openSSH -   SSH: connecting to 77.33.35.35, user: iot3, pass: au2021, timeout is 60 sek
+2021-12-20 23:16:09,518 - paramiko.transport - INFO - _log - Connected (version 2.0, client OpenSSH_7.9p1)
+2021-12-20 23:16:09,972 - paramiko.transport - INFO - _log - Authentication (password) successful!
+2021-12-20 23:16:09,974 - SSH - INFO - openSSH -   SSH: is conneceted
+2021-12-20 23:16:12,277 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 0 ###
+2021-12-20 23:16:32,990 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:
+--- fe80::f8c7:ff:fe00:1%lowpan0 ping statistics ---
+100 packets transmitted, 86 received, 14% packet loss, time 977ms
+rtt min/avg/max/mdev = 10.421/12.755/14.630/0.949 ms
+iot3@iotunit3:~$ ###
+
+
+2021-12-20 23:16:32,990 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 256 ###
+2021-12-20 23:16:53,716 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - ###Result:264 bytes from fe80::f8c7:ff:fe00:1%lowpan0: icmp_seq=100 ttl=255 time=35.8 ms
+
+--- fe80::f8c7:ff:fe00:1%lowpan0 ping statistics ---
+100 packets transmitted, 35 received, 65% packet loss, time 471ms
+rtt min/avg/max/mdev = 33.414/38.234/49.115/3.323 ms
+###
+
+
+2021-12-20 23:16:53,716 - PingAndPackageLoseTest - INFO - pingPackageLoseTest - 
+
+ ###PING AND PACKAGELOSE: Setup settings: count: 100 Delay: 0.2 Msg Size: 512 ###
